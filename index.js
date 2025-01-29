@@ -21,6 +21,15 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage });
 
+
+// create the folder if it doesn't exist
+const fs = require("fs");
+const folderPath = "upload_images";
+if (!fs.existsSync(folderPath)) {
+  fs.mkdirSync(folderPath);
+}
+
+
 //  here we declac static files
 app.use(express.static(path.join(__dirname, "upload_images")));
 app.use(express.static(path.join(__dirname, "frontend")));
