@@ -1,4 +1,4 @@
-const SERVER_URL = process.env.URL_API;
+const SERVER_URL = "http://localhost:3000";
 const UPLOAD_URL = `${SERVER_URL}/api/upload`;
 
 $(document).ready(function () {
