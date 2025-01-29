@@ -1,10 +1,11 @@
-const SERVER_URL = "https://fitness-challenge-coral.vercel.app";
+const SERVER_URL = "http://localhost:3000" || "https://fitness-challenge-coral.vercel.app";
 const UPLOAD_URL = `${SERVER_URL}/api/upload`;
 
 $(document).ready(function () {
   // fect and display fact
   $.ajax({
-    url: "https://corsproxy.io/?url=http://numbersapi.com/1/30/date?json", // this is just for  the url u gives me dosnt work with https
+    // url: "https://corsproxy.io/?url=http://numbersapi.com/1/30/date?json", // this is just for  the url u gives me dosnt work with https
+    url: "http://numbersapi.com/1/30/date?json",
     method: "GET",
     success: function (response) {
       $("#number-fact").text(response.text);
