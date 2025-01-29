@@ -4,7 +4,7 @@ const UPLOAD_URL = `${SERVER_URL}/api/upload`;
 $(document).ready(function () {
   // fect and display fact
   $.ajax({
-    url: "https://numbersapi.com/1/30/date?json",
+    url: "https://corsproxy.io/?url=http://numbersapi.com/1/30/date?json", // this is just for  the url u gives me dosnt work with https
     method: "GET",
     success: function (response) {
       $("#number-fact").text(response.text);
