@@ -25,3 +25,6 @@ BEGIN
 END //
 DELIMITER ;
 
+
+
+CALL addUser('bouchamajob@gmail.com', 'yassinebouchama', 'user');

@@ -1,10 +1,10 @@
-const SERVER_URL = "http://localhost:3000";
+const SERVER_URL = "https://fitness-challenge-coral.vercel.app";
 const UPLOAD_URL = `${SERVER_URL}/api/upload`;
 
 $(document).ready(function () {
   // fect and display fact
   $.ajax({
-    url: "http://numbersapi.com/1/30/date?json",
+    url: "https://numbersapi.com/1/30/date?json",
     method: "GET",
     success: function (response) {
       $("#number-fact").text(response.text);
