@@ -23,6 +23,7 @@ const upload = multer({ storage: storage });
 
 //  here we declac static files
 app.use(express.static(path.join(__dirname, "upload_images")));
+app.use(express.static(path.join(__dirname, "frontend")));
 
 app.use("/upload_images", express.static("upload_images"));
 
@@ -50,6 +51,10 @@ app.use('/api/*', (req, res) => {
 });
 
 
+// Serve frontend 404 page for other routes
+app.use((req, res) => {
+  res.status(404).sendFile(path.join(__dirname, 'frontend', '404.html'));
+});
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
