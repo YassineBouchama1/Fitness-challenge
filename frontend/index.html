@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Fit - Your Fitness Journey Starts Here</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="styles/main.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Onwave Group Fit</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Workouts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Nutrition</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Community</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1 class="animate-text">Welcome to Onwave Group Fit</h1>
+            <p class="animate-text-delay">Your journey to a healthier lifestyle starts here</p>
+        </div>
+    </header>
+
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="fact-box">
+                    <h3>Today's Fitness Fact</h3>
+                    <p id="number-fact">Loading...</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="upload-box" id="upload-area">
+                    <div class="upload-content">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p>Drag & drop images here or click to upload</p>
+                        <input type="file" id="file-input" accept="image/*" multiple hidden>
+                    </div>
+                    <div id="preview-area" class="preview-area"></div>
+                    <div class="upload-progress" id="upload-progress"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features container my-5">
+        <div class="row">
+            <div class="col-md-4 feature-card">
+                <h3>Personalized Workouts</h3>
+                <p>Get customized workout plans tailored to your fitness goals</p>
+            </div>
+            <div class="col-md-4 feature-card">
+                <h3>Nutrition Guidance</h3>
+                <p>Expert advice on maintaining a balanced diet</p>
+            </div>
+            <div class="col-md-4 feature-card">
+                <h3>Community Support</h3>
+                <p>Connect with like-minded fitness enthusiasts</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 Onwave Group Fit. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="#" class="text-white me-3">Terms of Service</a>
+                    <a href="#" class="text-white">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
