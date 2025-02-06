@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Click Fit - Your Fitness Journey Starts Here</title>
@@ -10,90 +13,43 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="styles/main.css">
-
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Onwave Group Fit</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Workouts</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Nutrition</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Community</a></li>
-                </ul>
-            </div>
+    <nav>
+        <div class="nav__logo">
+            <p>Logo</p>
         </div>
+        <ul class="nav__links">
+            <li class="link"><a href="#">Home</a></li>
+            <li class="link"><a href="#">Program</a></li>
+            <li class="link"><a href="#">Service</a></li>
+            <li class="link"><a href="#">About</a></li>
+            <li class="link"><a href="#">Community</a></li>
+        </ul>
+        <button class="btn">Join Now</button>
     </nav>
 
-    <header class="hero">
-        <div class="container">
-            <h1 class="animate-text">Welcome to Onwave Group Fit</h1>
-            <p class="animate-text-delay">Your journey to a healthier lifestyle starts here</p>
+    <header class="section__container header__container">
+        <div class="header__content">
+            <span class="bg__blur"></span>
+            <span class="bg__blur header__blur"></span>
+            <h4> SHAPE YOUR BODY</h4>
+            <h1><span>TRANSFORM</span> YOUR BODY SHAPE</h1>
+            <p>
+                Unleash your potential and embark on a journey towards a stronger,
+                fitter, and more confident you. Sign up for 'Make Your Body Shape' now
+                and witness the incredible transformation your body is capable of!
+            </p>
+            <button class="btn">Get Started</button>
+        </div>
+        <div class="header__image">
+            <img src="assets/images/hero.png" alt="header" />
         </div>
     </header>
 
-    <section class="container my-5">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="fact-box">
-                    <h3>Today's Fitness Fact</h3>
-                    <p id="number-fact">Loading...</p>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="upload-box" id="upload-area">
-                    <div class="upload-content">
-                        <i class="fas fa-cloud-upload-alt"></i>
-                        <p>Drag & drop images here or click to upload</p>
-                        <input type="file" id="file-input" accept="image/*" multiple hidden>
-                    </div>
-                    <div id="preview-area" class="preview-area"></div>
-                    <div class="upload-progress" id="upload-progress"></div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="features container my-5">
-        <div class="row">
-            <div class="col-md-4 feature-card">
-                <h3>Personalized Workouts</h3>
-                <p>Get customized workout plans tailored to your fitness goals</p>
-            </div>
-            <div class="col-md-4 feature-card">
-                <h3>Nutrition Guidance</h3>
-                <p>Expert advice on maintaining a balanced diet</p>
-            </div>
-            <div class="col-md-4 feature-card">
-                <h3>Community Support</h3>
-                <p>Connect with like-minded fitness enthusiasts</p>
-            </div>
-        </div>
-    </section>
 
-    <footer class="bg-dark text-white py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <p>&copy; 2025 Onwave Group Fit. All rights reserved.</p>
-                </div>
-                <div class="col-md-6 text-end">
-                    <a href="#" class="text-white me-3">Terms of Service</a>
-                    <a href="#" class="text-white">Privacy Policy</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
 </body>
 
 </html>
