@@ -122,6 +122,53 @@
 
 
     <section class="section__container join__container">
+        <h2 class="section__header">Today's Fitness Fact</h2>
+        <p id="number-fact" class="section__subheader">
+            Loading...
+        </p>
+
+        <div class="join__image">
+            <div class="col-md-6">
+                <div class="upload-box" id="upload-area">
+                    <div class="upload-content">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p>Drag & drop images here or click to upload</p>
+                        <input type="file" id="file-input" accept="image/*" multiple hidden>
+                    </div>
+                    <div id="preview-area" class="preview-area"></div>
+                    <div class="upload-progress" id="upload-progress"></div>
+                </div>
+            </div>
+            <div class="join__grid">
+                <div class="join__card">
+                    <span><i class="ri-user-star-fill"></i></span>
+                    <div class="join__card__content">
+                        <h4>Personal Trainer</h4>
+                        <p>Unlock your potential with our expert Personal Trainers.</p>
+                    </div>
+                </div>
+
+                <div class="join__card">
+                    <span><i class="ri-vidicon-fill"></i></span>
+                    <div class="join__card__content">
+                        <h4>Practice Sessions</h4>
+                        <p>Elevate your fitness with practice sessions.</p>
+                    </div>
+                </div>
+                <div class="join__card">
+                    <span><i class="ri-building-line"></i></span>
+                    <div class="join__card__content">
+                        <h4>Good Management</h4>
+                        <p>Supportive management, for your fitness success.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="section__container join__container">
         <h2 class="section__header">WHY JOIN US ?</h2>
         <p class="section__subheader">
             Our diverse membership base creates a friendly and supportive
@@ -298,6 +345,7 @@
     </script>
 
 
+
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const exploreGrid = document.querySelector('.explore__grid');
@@ -354,6 +402,7 @@
 
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

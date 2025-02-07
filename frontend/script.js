@@ -1,6 +1,6 @@
-const SERVER_URL = "http://localhost:3000" || "https://fitness-challenge-coral.vercel.app";
+const SERVER_URL = "http://localhost:3000"
 const UPLOAD_URL = `${SERVER_URL}/api/upload`;
-
+console.log('test api')
 $(document).ready(function () {
   // fect and display fact
   $.ajax({
